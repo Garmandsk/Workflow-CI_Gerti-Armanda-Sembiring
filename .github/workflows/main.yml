@@ -60,7 +60,7 @@ jobs:
       - name: Build Docker Model
         run: |
           cd MLproject
-          mlflow models build-docker --model-uri "runs:/$RUN_ID/model" --name "cc"
+          mlflow models build-docker --model-uri "runs:/$RUN_ID/model" --name "smsml_gerti-armanda-sembiring"
 
       # Login to Docker Hub
       - name: Log in to Docker Hub
