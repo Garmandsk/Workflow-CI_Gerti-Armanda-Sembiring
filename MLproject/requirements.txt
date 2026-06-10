@@ -1,0 +1,12 @@
+dagshub==0.7.0
+hyperopt==0.2.7
+matplotlib==3.10.9
+mlflow==3.13.0
+mlflow_skinny==3.13.0
+mlflow_tracing==3.13.0
+numpy==2.4.6
+pandas==3.0.3
+scikit_learn==1.9.0
+scipy==1.17.1
+seaborn==0.13.2
+setuptools=69.0.0
