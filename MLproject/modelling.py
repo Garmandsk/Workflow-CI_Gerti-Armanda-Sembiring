@@ -1,7 +1,6 @@
 import json
 import warnings
 
-import dagshub
 import matplotlib.pyplot as plt
 import mlflow
 import numpy as np
@@ -303,5 +302,5 @@ if __name__ == "__main__":
         plt.close()  # Bersihkan memori
 
         print(
-            f"Selesai! Cek DagsHub kamu sekarang. F1-Score pada Test Set: {test_metrics['test_f1']:.4f}"
+            f"Selesai! Cek Github/DagsHub kamu sekarang. F1-Score pada Test Set: {test_metrics['test_f1']:.4f}"
         )
