@@ -32,11 +32,11 @@ if __name__ == "__main__":
     warnings.filterwarnings("ignore")
     np.random.seed(42)
 
-    dagshub.init(
-        repo_owner="xmiagertiarmanda",
-        repo_name="SMSML_Gerti-Armanda-Sembiring",
-        mlflow=True,
-    )
+    # dagshub.init(
+    #     repo_owner="xmiagertiarmanda",
+    #     repo_name="SMSML_Gerti-Armanda-Sembiring",
+    #     mlflow=True,
+    # )
 
     print("Memuat dataset...")
     file_path = "email_preprocessing.csv"
