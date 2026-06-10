@@ -41,7 +41,7 @@ jobs:
           mlflow run . --env-manager=local
 
       # Simpan Artefak ke GitHub
-      - name: Upload MLflow Artifacts
+      - name: Upload to Github
         uses: actions/upload-artifact@v4
         with:
           name: mlflow-artifacts
