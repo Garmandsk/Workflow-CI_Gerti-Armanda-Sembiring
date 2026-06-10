@@ -193,7 +193,7 @@ if __name__ == "__main__":
         # Simpan Log model
         mlflow.sklearn.log_model(
             sk_model=final_pipeline,
-            name="best_rf_pipeline",
+            name="model",
             registered_model_name="Email_Spam_Classifier_Model",
             serialization_format=mlflow.sklearn.SERIALIZATION_FORMAT_SKOPS,
         )

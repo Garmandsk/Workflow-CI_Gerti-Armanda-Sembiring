@@ -46,7 +46,7 @@ jobs:
       - name: Get latest MLflow run_id
         run: |
           cd MLproject
-          RUN_ID=$(python -c "from mlflow.tracking import MlflowClient; client = MlflowClient(); print(client.search_runs(['0'], order_by=['start_time DESC'], max_results=1)[0].info.run_id)")
+          RUN_ID=$(python -c "from mlflow.tracking import MlflowClient; client = MlflowClient(); runs = client.search_runs(['0'], filter_string=\"tags.mlflow.runName = 'RF_Hyperopt_CV_Pipeline'\", order_by=['start_time DESC']); print(runs[0].info.run_id)")
           echo "RUN_ID=$RUN_ID" >> $GITHUB_ENV
           echo "Latest run_id: $RUN_ID"
 
